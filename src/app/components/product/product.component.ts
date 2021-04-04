@@ -16,7 +16,7 @@ export class ProductComponent implements OnInit {
     private activatedRoute:ActivatedRoute) { } //ActivatedRoute hazır paket routeyi aktifleştirmek
 
   //constractere benzer
-  //public void NgOnInit(){} benzer
+  //public void NgOnInit(){} benzer gibi
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params=>{
       if(params["categoryId"]){
